@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Brinahlly Beauty </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icone.png">
+</head>
+<body>
+    
+    <!-- Frete -->
+    
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span>FRETE GRÁTIS ACIMA DE COMPRAS A PARTIR DE R$ 99</span>
+                <div class="top-bar-links">
+                    <a href="#">Ajuda</a>
+                    <a href="#">Rastrear Pedido</a>
+                    <a href="#">Lista de Desejos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <div class="logo">
+                    <div class="logo-image">
+                        <div class="logo-text">
+                            <h1>Brinahlly Beauty</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#produtos">Produtos <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#">Body Splash</a>
+                                <a href="#">Perfumes</a>
+                                <a href="#">Kits Presente</a>
+                                <a href="#">Lançamentos</a>
+                            </div>
+                        </li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar produtos...">
+                    </div>
+                    
+                    <div class="account-dropdown">
+                        <i class="fas fa-user"></i>
+                        <div class="dropdown-menu">
+                            <a href="#" id="login-link">Login</a>
+                            <a href="#" id="cadastro-link">Cadastrar</a>
+                            <a href="#" id="minhas-compras-link">Minhas Compras</a>
+                            <a href="#" id="favoritos-link">Meus Favoritos</a>
+                        </div>
+                    </div>
+
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                        <div class="dropdown-menu">
+                            <div class="cart-preview">
+                                <h4>Seu Carrinho</h4>
+                                <div class="cart-items"></div>
+                                <div class="cart-total">
+                                    <span>Total: R$ 0,00</span>
+                                </div>
+                                <button class="btn-primary">Finalizar Compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Body Splash Collection</h2>
+                <p>A essência da sofisticação em cada detalhe</p>
+                <button class="btn-primary">Explorar Coleção</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas Destaque -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="brands-grid">
+                <div class="brand-item">FRETE GRÁTIS</div>
+                <div class="brand-item">PARCELAMENTO</div>
+                <div class="brand-item">5% OFF NO PIX</div>
+                <div class="brand-item">PRIMEIRA COMPRA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="products-section" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Body Splash</h2>
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card" data-id="1" data-price="49.90">
+                    <div class="product-badge">LANÇAMENTO</div>
+                    <img src="Lily.png" alt="Flor de Cerejeira">
+                    <div class="product-info">
+                        <h3>Lily Encantado</h3>
+                        <p>Romantico e Ousado</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 44,95</span>
+                            <span class="installment">ou 3x de R$ 16,63</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-comprar">Comprar Agora</button>
+                            <button class="btn-add-cart">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card" data-id="2" data-price="54.90">
+                    <div class="product-badge">LANÇAMENTO</div>
+                    <img src="intense.png" alt="Brisa Tropical">
+                    <div class="product-info">
+                        <h3>Intenso</h3>
+                        <p>Fragancia amadeirada e sofisticada</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 44,95</span>
+                            <span class="installment">ou 3x de R$ 16,63</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-comprar">Comprar Agora</button>
+                            <button class="btn-add-cart">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card" data-id="3" data-price="52.90">
+                    <div class="product-badge">FICTÍCIO</div>
+                    <img src="vanilla.png" alt="Vanilla Dream">
+                    <div class="product-info">
+                        <h3>Vanilla Blossom</h3>
+                        <p>Doce e aconchegante com notas de baunilha</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 5000,00</span>
+                            <span class="installment">ou 2x de R$ 2500,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-comprar">Comprar Agora</button>
+                            <button class="btn-add-cart">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-card" data-id="4" data-price="47.90">
+                     <div class="product-badge">FICTÍCIO</div>
+                     <img src="red.png" alt="Vanilla Dream">
+                    <div class="product-info">
+                        <h3>Serena</h3>
+                        <p> Uma essência encantada</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 5000,00</span>
+                            <span class="installment">ou 2x de R$ 2500,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-comprar">Comprar Agora</button>
+                            <button class="btn-add-cart">Adicionar à Sacola</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiais -->
+    <section class="offers-section" id="ofertas">
+        <div class="container">
+            <h2 class="section-title">Ofertas Especiais</h2>
+                     <img src="LEVE 2 FRAGRÂNCIAS.png" alt="Vanilla Dream">
+                <div class="offer-content">
+                    <button class="btn-primary">Aproveitar Oferta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Receba Ofertas Exclusivas</h2>
+                <p>Cadastre-se e seja o primeiro a saber sobre novidades e promoções</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Brinahlly Beauty</h3>
+                        <p>A essência da sofisticação em cada detalhe</p>
+                    </div>
+                    <div class="social-links">
+                        <h4>Siga-nos</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/brinahlly_beauty?igsh=cWducDA0cDVleG01" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://facebook.com/brinahllybeauty" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://tiktok.com/@brinahllybeauty" target="_blank" class="social-link">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                            <a href="https://whatsapp.com" target="_blank" class="social-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Nossas Lojas</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#" id="footer-minhas-compras">Meus Pedidos</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Atendimento</h4>
+                    <p><i class="fas fa-phone"></i> (11) 4004-1824</p>
+                    <p><i class="fas fa-envelope"></i> contato@brinahllybeauty.com</p>
+                    <p><i class="fas fa-clock"></i> Seg à Sex: 9h às 18h</p>
+                    <div class="security-seal">
+                        <i class="fas fa-lock"></i>
+                        <span>Site 100% Seguro</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brinahlly Beauty. Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-pix"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" id="loginEmail" placeholder="E-mail ou CPF" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn-primary">Entrar</button>
+                <div class="social-login">
+                    <p>Ou entre com:</p>
+                    <div class="social-buttons">
+                        <button type="button" class="btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="btn-social btn-facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button type="button" class="btn-social btn-instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <a href="#" id="forgot-password">Esqueci minha senha</a>
+                    <a href="#" id="showRegister">Criar conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Cadastro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Criar Conta</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" id="registerName" placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="Senha" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirmar senha" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="registerPhone" placeholder="Celular (DDD) + número" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="newsletter" checked>
+                    <label for="newsletter">Desejo receber ofertas e novidades</label>
+                </div>
+                <button type="submit" class="btn-primary">Criar Conta</button>
+                <div class="social-login">
+                    <p>Ou cadastre-se com:</p>
+                    <div class="social-buttons">
+                        <button type="button" class="btn-social btn-google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="btn-social btn-facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button type="button" class="btn-social btn-instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <a href="#" id="showLogin">Já tenho conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Minhas Compras -->
+    <div id="comprasModal" class="modal">
+        <div class="modal-content large">
+            <span class="close-modal">&times;</span>
+            <h2>Minhas Compras</h2>
+            <div class="compras-content">
+                <div class="empty-state" id="empty-compras">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Nenhum pedido encontrado</h3>
+                    <p>Você ainda não realizou nenhuma compra.</p>
+                    <button class="btn-primary" id="start-shopping">Começar a Comprar</button>
+                </div>
+                <div class="orders-list" id="orders-list" style="display: none;">
+                    <!-- Pedidos serão carregados aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
